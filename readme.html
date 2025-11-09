@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Manager - Read Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Cloud Manager Read Me</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/readme">Read Me</a></li>
+            <li><a href="#" id="logoutBtn">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>About This Simple Cloud Manager</h2>
+        <p>This is a very basic demonstration of a cloud computing web application.</p>
+        
+        <h3>Features:</h3>
+        <ul>
+            <li>User Registration and Login (securely hashed passwords).</li>
+            <li>Session Management using JWT (JSON Web Tokens) stored in HTTP-only cookies.</li>
+            <li>Protected routes (Dashboard, Read Me) accessible only to authenticated users.</li>
+            <li>Example of user-specific "files" displayed on the dashboard.</li>
+        </ul>
+
+        <h3>How it Works:</h3>
+        <p>The backend is built with Node.js and Express, handling API requests for registration, login, and serving protected pages. The frontend uses plain HTML, CSS, and a little JavaScript to interact with the backend.</p>
+        <p><strong>Note:</strong> The user database is a simple JSON file (<code>users.json</code>) for demonstration purposes. In a real application, you would use a robust database system like MongoDB, PostgreSQL, or MySQL.</p>
+        <p>To try it:</p>
+        <ol>
+            <li>Register a new account on the home page.</li>
+            <li>Log in with your new account.</li>
+            <li>Navigate between Dashboard and Read Me.</li>
+            <li>Log out to return to the login page.</li>
+        </ol>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Simple Cloud Manager</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

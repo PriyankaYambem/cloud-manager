@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Manager - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Cloud Manager Dashboard</h1>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/dashboard">Dashboard</a></li>
+            <li><a href="/readme">Read Me</a></li>
+            <li><a href="#" id="logoutBtn">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Welcome to Your Cloud Space!</h2>
+        <p>This is your personalized dashboard. Here you can manage your files and cloud resources.</p>
+        
+        <div class="file-list">
+            <h3>Your Files:</h3>
+            <ul id="userFiles">
+                <!-- Files will be loaded here by JavaScript -->
+                <li>Loading files...</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Simple Cloud Manager</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
